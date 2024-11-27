@@ -1,0 +1,31 @@
+body{
+    font-family: sans-serif;
+}
+
+.my-text{
+    color: green;
+    background-color: yellow;
+    padding-top: 50px;
+}
+
+.my-heading{
+    font-family: cursive;
+    color:blue;
+}
+
+.mydiv{
+    width: 200px;
+    background-color: red;
+    padding: 40px 80px;
+    margin-top: 80px;
+    border-radius: 10px;
+    border: 10px solid black;
+}
+
+.mydiv h2{
+    color: white;
+}
+
+.mydiv p{
+    color: yellow;
+}
