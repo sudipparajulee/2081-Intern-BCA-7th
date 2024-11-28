@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+p{
+    color: red;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+p:hover{
+    color: blue;
+    font-weight: 900;
+}
+
+.mytable{
+    border-collapse: collapse;
+    width: 800px;
+}
+
+.mytable th{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.mytable td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.mytable tr:nth-child(even){
+    background-color: lightgray;
+}
+
+.mytable tr:hover{
+    background-color: lightblue;
+}
+
+.mytable2{
+    border-collapse: collapse;
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.mytable2 td{
+    border: 1px solid black;
+}
+
+.mytable2 tr:hover{
+    background-color: lightgreen;
+}
