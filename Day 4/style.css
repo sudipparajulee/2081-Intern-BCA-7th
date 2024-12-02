@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+}
+
+.services{
+    padding: 20px 40px;
+}
+
+.services > h2{
+    text-align: center;
+}
+
+.service{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 21%;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgb(188, 188, 194);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service:hover{
+    background-color: rgb(170, 18, 18);
+    transform: translateY(-5px);
+    border-radius: 15px;
+}
+
+.service p{
+    text-align: justify;
+    margin: 0;
+}
+
+.service h2{
+    margin: 0;
+}
+
+
+
