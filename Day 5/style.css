@@ -1,0 +1,47 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+}
+
+.logo{
+    height: 60px;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu a:hover{
+    background-color: rgb(161, 161, 245);
+}
+
+.product-section h1{
+    text-align: center;
+}
+
+.product-container{
+    padding: 20px 40px;
+    display: flex;
+}
+
+.product{
+    flex: 1;
+    background-color: rgb(144, 193, 237);
+    margin: 10px;
+    padding: 10px;
+}
+
+.product button{
+    /* Do yourself  */
+}
