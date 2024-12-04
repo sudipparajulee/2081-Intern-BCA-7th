@@ -1,0 +1,15 @@
+body{
+    font-family: sans-serif;
+}
+
+.pricing-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 40px 100px;
+}
+
+.pricing{
+    background-color: aqua;
+    padding: 20px;
+}
