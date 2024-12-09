@@ -1,0 +1,79 @@
+body{
+    font-family: sans-serif;
+}
+
+.pricing-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 150px;
+    gap: 20px;
+    background-color: #395585;
+}
+
+.pricing{
+    border-radius: 5px;
+    text-align: center;
+    background-color: aliceblue;
+    color: white;
+
+}
+
+.pricing p{
+    color: rgb(117, 114, 114);
+}
+
+.pricing h2{
+    margin: 0;
+    padding: 20px 0;
+}
+
+.pricing-details{
+    border-radius: 5px 5px 0 0;
+}
+
+.bg-orange{
+    background-color: #d39d06;
+}
+
+.bg-maroon{
+    background-color: #7d1e48;
+}
+
+.bg-gray{
+    background-color: #42656d;
+}
+
+.bg-orange-rate{
+    background-color: #e5b412;
+}
+
+.bg-maroon-rate{
+    background-color: #96285b;
+}
+
+.bg-gray-rate{
+    background-color: #56818a;
+}
+
+.pricing-rate{
+    padding: 10px 0;
+}
+
+.pricing-rate h1{
+    margin-top: 0;
+}
+
+.pricing-rate p{
+    color: white;
+}
+
+.btn-signup{
+    margin: 20px 0;
+}
+
+.btn-signup a{
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: white;
+}
