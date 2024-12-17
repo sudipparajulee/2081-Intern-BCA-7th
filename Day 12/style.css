@@ -1,0 +1,52 @@
+body{
+    font-family: sans-serif;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 100px;
+    gap: 10px;
+}
+
+.image-div{
+    position: relative;
+}
+
+.views{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.land{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sell{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.image-div img{
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+}
+
+.service{
+    background-color: rgb(243, 220, 220);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(207, 206, 206);
+    position: relative;
+}
+
+.discount{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
