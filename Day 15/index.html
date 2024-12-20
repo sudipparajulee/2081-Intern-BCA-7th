@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myheading">BITS</h1>
+    <button onclick="myfunction()">Click Here</button>
+    <p id="mytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ut cumque, fugiat vitae eligendi veritatis tempora deserunt quisquam perspiciatis repudiandae, laborum, eaque esse in voluptatibus qui reiciendis! Qui quia nulla odio, eum sunt labore ad minima temporibus quibusdam ratione? Ipsum.</p>
+    <script>
+        document.write("Hello World");
+        // alert('namaste');
+        console.log('Hello World');
+        document.getElementById('myheading').innerHTML = "BITMAP";
+        document.getElementById('myheading').style.color = "red";
+        document.getElementById('myheading').style.backgroundColor = "yellow";
+        function myfunction()
+        {
+            if(document.getElementById('myheading').style.color == "red")
+            {
+                document.getElementById('myheading').style.color = "blue";
+            }
+            else
+            {
+                document.getElementById('myheading').style.color = "red";
+            }   
+
+            if(document.getElementById('mytext').style.display == "none")
+            {
+                document.getElementById('mytext').style.display = "block";
+            }
+            else
+            {
+                document.getElementById('mytext').style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
