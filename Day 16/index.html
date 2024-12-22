@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create Marks Calculator for English, Maths, Science, and Computer. -->
+    <input type="text" id="english" placeholder="Enter English Marks">
+    <input type="text" id="maths" placeholder="Enter Maths Marks">
+    <input type="text" id="science" placeholder="Enter Science Marks">
+    <input type="text" id="computer" placeholder="Enter Computer Marks">
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+    <script>
+        function calculate() {
+            var english = document.getElementById('english').value;
+            var maths = document.getElementById('maths').value;
+            var science = document.getElementById('science').value;
+            var computer = document.getElementById('computer').value;
+            //validations
+            if(english == '' || maths == '' || science == '' || computer == '') {
+                alert('Please enter all the marks');
+                return;
+            }
+            if(isNaN(english) || isNaN(maths) || isNaN(science) || isNaN(computer))
+            {
+                alert('Please enter a valid marks');
+                return;
+            }
+            if((english <0 || english > 100) || (maths <0 || maths > 100) || (science <0 || science > 100) || (computer <0 || computer > 100))
+            {
+                alert('Please enter marks between 0 and 100');
+                return;
+            }
+            var total = parseInt(english) + parseInt(maths) + parseInt(science) + parseInt(computer);
+            var percentage = total / 4;
+            document.getElementById('result').innerHTML = "Total Marks: " + total + "<br>Percentage: " + percentage.toFixed(2) + "%";
+        }
+    </script>
+</body>
+</html>

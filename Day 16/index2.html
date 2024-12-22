@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="clock"></h1>
+    <script>
+        function time()
+        {
+            let date = new Date();
+            let hrs = date.getHours();
+            let h = hrs > 12 ? hrs - 12 : hrs;
+            let m = date.getMinutes();
+            let s = date.getSeconds();
+            let ampm = hrs >= 12 ? 'PM' : 'AM';
+            let time = check(h) + ':' + check(m) + ':' + check(s) + ' ' + ampm;
+            document.getElementById('clock').innerHTML = time;
+        }
+        time();
+        setInterval(time, 1000);
+
+        function check(x){
+            if(x < 10)
+            {
+                return '0' + x;
+            }
+            else
+            {
+                return x;
+            }
+        }
+    </script>
+</body>
+</html>
