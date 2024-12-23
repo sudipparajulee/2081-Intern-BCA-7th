@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-bar">
+        <p class="progress" id="progress">75%</p>
+    </div>
+
+    <script>
+        let progress = document.getElementById('progress');
+        let count = 4;
+        let progressInterval = setInterval(progressfn, 100);
+        function progressfn(){
+            count += 1;
+            progress.style.width = count + '%';
+            progress.innerHTML = count + '%';
+            if(count == 75){
+                clearInterval(progressInterval);
+            }
+        }
+
+    </script>
+</body>
+</html>
