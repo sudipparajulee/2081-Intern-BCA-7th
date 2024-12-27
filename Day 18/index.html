@@ -5,19 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
+    
+    <div class="fixed bottom-10 right-10 bg-blue-800 text-white px-2 py-1 rounded-full cursor-pointer hidden" onclick="gotop()" id="gotop">
+        <i class="ri-arrow-up-fill"></i>
+    </div>
+
     <nav class="bg-white flex items-center justify-between px-10 shadow sticky top-0 z-40 ">
         <img src="https://bitmapitsolution.com/images/logo/logo.png" alt="" class="h-16 py-2">
         <div class="flex gap-4 text-blue-900">
             <a href="" class="font-bold">Home</a>
             <a href="">About</a>
-            <a href="">Services</a>
+            <div class="group">
+                <a href="">Services</a>
+                <div class="absolute bg-white shadow-lg border hidden group-hover:grid">
+                    <a href="" class="px-6 py-1">Service 1</a>
+                    <a href="" class="px-6 py-1">Service 2</a>
+                    <a href="" class="px-6 py-1">Service 3</a>
+                </div>
+            </div>
             <a href="">Projects</a>
             <a href="">Blogs</a>
         </div>
         <a href="" class="bg-blue-900 text-white px-4 py-1 rounded-lg hover:bg-red-600 transition duration-300">Get IT Support</a>
     </nav>
+
+    <div class="px-20">
+        <h2 class="text-center text-3xl font-bold mt-5">Our Services</h2>
+        <p class="text-center text-gray-500">Here are some of our services</p>
+        <div class="grid grid-cols-4 gap-5 mt-5">
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex items-center mt-5">
+        <p class="bg-red-600 text-white px-5 py-3">Notice</p>
+        <marquee behavior="alternate" direction="left" scrollamount="50" class="bg-gray-100 py-3 flex-1">This is a notice</marquee>
+    </div>
+
+    <div class="px-20">
+        <h2 class="text-center text-3xl font-bold mt-5">Our Services</h2>
+        <p class="text-center text-gray-500">Here are some of our services</p>
+        <div class="grid grid-cols-4 gap-5 mt-5">
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+        </div>
+    </div>
+
     <div class="px-20">
         <h2 class="text-center text-3xl font-bold mt-5">Our Services</h2>
         <p class="text-center text-gray-500">Here are some of our services</p>
@@ -53,5 +124,27 @@
             <a href="" class="bg-white text-blue-900 px-4 py-1 rounded-full uppercase">Request a Quote</a>
         </div>
     </div>
+
+    <script>
+        function gotop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.onscroll = function (){
+            if(window.scrollY < 200)
+            {
+                document.getElementById('gotop').classList.add('hidden');
+                document.getElementById('gotop').classList.remove('block');
+            }
+            else
+            {
+                document.getElementById('gotop').classList.add('block');
+                document.getElementById('gotop').classList.remove('hidden');
+            }
+        }
+    </script>
 </body>
 </html>
