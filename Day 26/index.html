@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="fixed inset-0 bg-blue-600 z-10 bg-opacity-50 backdrop-blur-sm flex items-center justify-center" id="popup">
+        <div class="w-4/12 bg-white relative">
+            <img src="https://bitmapitsolution.com/images/modal_images/Untitled-1_1736318311.png" alt="" class="w-full mx-auto">
+            <span class="absolute -right-2 -top-2 bg-white px-2 rounded-full cursor-pointer" onclick="hidePopup()">X</span>
+        </div>
+    </div>
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4 lg:mx-20 sm:mx-10 mx-5 mt-10">
+        <div class="bg-gray-100 p-4">
+            <h1 class="text-2xl font-bold">Title</h1>
+            <p class="text-gray-500 line-clamp-3"> आ.व.२०८१/८२ मा स्वीकृत कार्यक्रम अनुसार स्वास्थ्य कार्यालय नवलपरासी (ब.सु.पू.) को आयोजनामा १ दिने MNH Review तथा अभिमुखीकरण कार्यक्रम सम्पन्न गरियो र सो-कार्यक्रमको सहजीकरण स्वास्थ्य कार्यालयको पब्लिक हेल्थ नर्स भूमिका निरौलाले गर्नु भएको थियो । यस कार्यक्रममा पालिका अनुसार MNH कार्यक्रमको समिक्षा साथै सबै स्थानीय तहबाट गरिएका नविनतम अभ्यासहरुबारे सहभागीहरुले जानकारी गराउनु भएको थियो । Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        <div class="bg-gray-100 p-4">
+            <h1 class="text-2xl font-bold">Title</h1>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        <div class="bg-gray-100 p-4">
+            <h1 class="text-2xl font-bold">Title</h1>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+        <div class="bg-gray-100 p-4">
+            <h1 class="text-2xl font-bold">Title</h1>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </div>
+
+    </div>
+
+    <div class="lg:px-20 sm:px-10 px-5">
+        <h2 class="text-center text-3xl font-bold mt-5">Our Services</h2>
+        <p class="text-center text-gray-500">Here are some of our services</p>
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-5">
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+
+            <div class="p-4 bg-gray-100 shadow border text-center rounded-lg hover:shadow-lg cursor-pointer hover:-translate-y-1 transition duration-300">
+                <h2 class="font-semibold">Web Development</h2>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 mx-10 mt-10">
+        <div class="col-span-3">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="https://honawalpur.gandaki.gov.np/images/banner_images/Picture1_1731308316.jpg" class="h-[700px] w-full" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://honawalpur.gandaki.gov.np/images/banner_images/To%20upload_1731310910.jpg" class="h-[700px] w-full object-cover" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://honawalpur.gandaki.gov.np/images/banner_images/461386179_853570760252302_5128669123200019310_n_1731310663.jpg" class="h-[700px] w-full object-cover" alt="">
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+               
+            </div>
+        </div>
+        <div class="grid gap-2">
+            <div class="bg-gray-100 rounded-lg">
+                <h2>जनस्वास्थ्य अधिकृत/ कार्यालय प्रमुख</h2>
+            </div>
+            <div class="bg-gray-100 rounded-lg">
+                <h2>जनस्वास्थ्य अधिकृत/ कार्यालय प्रमुख</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        });
+    </script>
+
+    <script>
+        function hidePopup()
+        {
+            document.getElementById('popup').classList.remove('flex');
+            document.getElementById('popup').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
