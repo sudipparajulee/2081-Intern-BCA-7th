@@ -8,15 +8,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <nav class="flex justify-center gap-4 py-5 font-thin bg-gradient-to-b from-blue-800 to-blue-500 text-white">
         <a href=""> गृहपृष्‍ठ</a>
         <a href="">हाम्रो बारेमा</a>
         <a href="">रोगहरु</a>
-        <div class="group/main"><a href="">स्वास्थ्य संस्था </a> > 
-            <div class="absolute bg-gray-100 gap-2 py-2 rounded-lg shadow text-gray-800 hidden group-hover/main:grid z-30">
-                <div class="relative group/sub">
+        <div class="group/main" id="dropdown-menu"><a href="#">स्वास्थ्य संस्था </a> > 
+            <div class="absolute bg-gray-100 gap-2 py-2 rounded-lg shadow text-gray-800 hidden grid z-30" id="dropdown">
+                <div class="relative group/sub" >
                     <a href="" class="hover:bg-gray-200 p-2 block rounded-lg">जिल्ला स्वास्थ्य कार्यालय</a>
                     <div class="absolute w-52 left-44 ml-2 top-0 bg-gray-100 gap-2 p-2 rounded-lg shadow text-gray-800 hidden group-hover/sub:grid">
                         <a href="" class="hover:bg-gray-200 p-2 rounded-lg">जिल्ला स्वास्थ्य कार्यालय</a>
@@ -31,7 +32,7 @@
                     </div>
                 </div>
                 <a href="" class="hover:bg-gray-200 p-2 rounded-lg">उपजिल्ला स्वास्थ्य कार्यालय</a>
-                <a href="" class="hover:bg-gray-200 p-2 rounded-lg">गाउँपालिका स्वास्थ्य कार्यालय</a>
+                
             </div>
         </div>
         <a href="">सूचनाहरु</a>
@@ -80,6 +81,15 @@
 
     <script>
         let table = new DataTable('#myTable');
+    </script>
+
+    <script>
+        
+        $("#dropdown-menu").click(function(){
+            $("#dropdown").animate({
+                height: "toggle",
+            }, 300);
+        });
     </script>
 </body>
 </html>

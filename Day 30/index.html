@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <button onclick="myfunction()" class="bg-blue-500 text-white  px-2 m-2 rounded-lg">Click Me</button>
+    <div id="mydiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis totam velit ducimus quaerat magni, earum deserunt illum quisquam est nam?
+    </div>
+
+    <script>
+        function myfunction(){
+            $("#mydiv").animate(
+                {
+                    height: "toggle"
+                },
+                300
+            );
+        }
+    </script>
+</body>
+</html>
