@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <nav class="flex justify-center gap-4 py-5 font-thin bg-gradient-to-b from-blue-800 to-blue-500 text-white">
+    <nav class="md:flex hidden justify-center gap-4 py-5 font-thin bg-gradient-to-b from-blue-800 to-blue-500 text-white">
         <a href=""> गृहपृष्‍ठ</a>
         <a href="">हाम्रो बारेमा</a>
         <a href="">रोगहरु</a>
@@ -42,6 +42,15 @@
         <a href="">मिडिया </a>
         <a href="">कार्यक्रम</a>
         <a href="">सम्पर्क</a>
+    </nav>
+
+    <nav class="md:hidden flex justify-end bg-blue-500 py-2 px-4 relative z-50">
+        <span class="ri-menu-line text-2xl text-white border px-2 rounded-lg cursor-pointer" onclick="mobmenu()">=</span>
+        <div id="mob-menu" class="absolute hidden top-12 right-0 left-0 bg-white px-4  gap-2 ">
+            <a href="" class="py-2 block"> गृहपृष्‍ठ</a>
+            <a href="" class="py-2 block">हाम्रो बारेमा</a>
+            <a href="" class="py-2 block">रोगहरु</a>
+        </div>
     </nav>
 
     
@@ -90,6 +99,14 @@
                 height: "toggle",
             }, 300);
         });
+    </script>
+
+    <script>
+        function mobmenu(){
+            $("#mob-menu").animate({
+                height: "toggle",
+            }, 500);
+        }
     </script>
 </body>
 </html>
